@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Image Background Selector</h1>
+    <div class="upload-section">
+        <label for="png-upload">Upload PNG Image:</label>
+        <input type="file" id="png-upload" accept="image/png">
+    </div>
+    <div class="background-selection">
+        <h2>Select Background</h2>
+        <div class="background-option" id="default-bg-1">
+            <img src="background1.jpg" alt="Background 1">
+        </div>
+        <div class="background-option" id="default-bg-2">
+            <img src="background2.jpg" alt="Background 2">
+        </div>
+        <div class="background-option">
+            <label for="bg-upload">Upload Custom Background:</label>
+            <input type="file" id="bg-upload" accept="image/*">
+        </div>
+    </div>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <button id="download-btn">Download Image</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
